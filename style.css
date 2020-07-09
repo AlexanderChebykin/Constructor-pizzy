@@ -1,0 +1,88 @@
+* {
+		box-sizing: border-box;
+	}
+
+	#parent {
+		font-family: 'Comfortaa', cursive;
+		font-size: 18px;
+		padding: 20px;
+		text-align:center;
+		width: 90%;
+		margin: 0 auto;
+	}
+			
+	#sidebar{
+		float: left;
+		width: 33%;
+		border: 1px solid #f1f4f9;
+	}
+	.selectIngredientImg{
+		width: 50px;
+		height : 50px;
+		margin-right: 20px;
+	}
+
+	.selectIngredientBlock, .checkParametersBlock{
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		padding: 20px;
+		
+	}
+			
+	.checkParametersBlock{
+		background-color: #f1f4f9;
+		padding: 0px;
+		height : 0px;
+		overflow: hidden;
+	}
+
+	.parameterName{
+		margin-right:20px;
+	}
+			
+	#bigPizzaImg{
+		padding : 20px;
+		float: right;
+		width: 67%;
+	}
+			
+	#bigPizzaImg img{
+		display: block;
+		position: fixed;
+		left: 50%;
+	}
+			
+	.addedIngredients{
+		color : #becbd2;
+		font-size : 12px;
+	}
+			
+	li{
+		list-style-type: none;
+	}
+			
+	.smallImgs img{
+		width : 30px;
+	}
+			
+	#totalPrice{
+		position: fixed;
+		color : #768e9d;
+		font-size: 30px;
+		right: 20px;
+	}
+			
+	span.sum{
+		color : #0099cc;
+		font-weight : 700;
+	}
+		
+	@media screen and (max-width:870px)
+	{
+		#sidebar, #bigPizzaImg, #bigPizzaImg img {
+			display: block;
+			width: 100%;
+			position: static;
+		}
+	}
